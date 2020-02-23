@@ -51,3 +51,12 @@
 ;;
 ;; You can also try 'gd' (or 'C-c g d') to jump to their definition and see how
 ;; they are implemented.
+
+;transparent adjustment
+ (set-frame-parameter (selected-frame)'alpha '(90 . 90))
+ (add-to-list 'default-frame-alist'(alpha . (90 . 90)))
+
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq c-set-style "k&r")
+(setq c-basic-offset 4)
